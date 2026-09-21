@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.IssuedBooksController">
+   <children>
+      <Pane prefHeight="184.0" prefWidth="901.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="94.0" layoutY="23.0" prefHeight="93.0" prefWidth="225.0" text="Student" textFill="WHITE">
+               <font>
+                  <Font size="64.0" />
+               </font>
+            </Label>
+            <Label layoutX="108.0" layoutY="106.0" text="Library Management" textFill="WHITE" />
+         </children>
+      </Pane>
+      <Pane layoutY="183.0" prefHeight="546.0" prefWidth="901.0" style="-fx-background-color: #c3b5b5;">
+         <children>
+            <Button fx:id="btnbacktomain" layoutX="19.0" layoutY="493.0" mnemonicParsing="false" onAction="#BackToMain" style="-fx-background-color: teal;" text="Back to the main page">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                  </Lighting>
+               </effect>
+            </Button>
+            <TableView fx:id="isuuedBooksTable" layoutX="71.0" layoutY="15.0" prefHeight="430.0" prefWidth="655.0">
+               <columns>
+                  <TableColumn fx:id="bookName" prefWidth="172.0" text="Book Name" />
+                  <TableColumn fx:id="issuedDate" prefWidth="172.0" text="Issued Date" />
+                  <TableColumn fx:id="returnedDate" prefWidth="172.0" text="Returned Date" />
+                  <TableColumn fx:id="fine" prefWidth="140.0" text="Fine" />
+               </columns>
+            </TableView>
+            <HBox layoutX="487.0" layoutY="458.0" prefHeight="39.0" prefWidth="315.0" spacing="30.0">
+               <children>
+                  <Label prefHeight="34.0" prefWidth="298.0" text="Total Fine :" textFill="TEAL">
+                     <padding>
+                        <Insets left="50.0" top="7.0" />
+                     </padding>
+                     <font>
+                        <Font name="System Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="txtTotalFine" onAction="#calTotalFine" prefHeight="31.0" prefWidth="296.0">
+                     <HBox.margin>
+                        <Insets top="5.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

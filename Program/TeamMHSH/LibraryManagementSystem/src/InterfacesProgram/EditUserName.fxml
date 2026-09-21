@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="729.0" prefWidth="901.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.EditUserNameController">
+   <children>
+      <Pane prefHeight="729.0" prefWidth="365.0" style="-fx-background-color: teal;">
+         <children>
+            <ImageView fitHeight="729.0" fitWidth="365.0" opacity="0.57" pickOnBounds="true">
+               <image>
+                  <Image url="@images/742bf67964ad2c931d903af880d096fd.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+      <VBox layoutX="364.0" prefHeight="729.0" prefWidth="537.0" spacing="20.0">
+         <children>
+            <Label text="Edit UserName" textFill="#574a4a">
+               <font>
+                  <Font name="Zilla Slab Medium" size="30.0" />
+               </font>
+            </Label>
+            <Separator prefHeight="0.0" prefWidth="380.0" style="-fx-background-color: #4B9385;" />
+            <HBox prefHeight="106.0" prefWidth="467.0">
+               <VBox.margin>
+                  <Insets top="100.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox prefHeight="106.0" prefWidth="467.0">
+               <children>
+                  <Label prefHeight="48.0" prefWidth="205.0" text="NewUserName:" textFill="#008080ed" wrapText="true">
+                     <font>
+                        <Font name="System Italic" size="29.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="newUserName" prefHeight="43.0" prefWidth="206.0" promptText="newUserName">
+                     <HBox.margin>
+                        <Insets left="8.0" top="10.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox prefHeight="106.0" prefWidth="467.0" />
+            <Button fx:id="btnchangeUsename" mnemonicParsing="false" onAction="#changeUsername" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: teal; -fx-background-radius: 30;" text="Change">
+               <VBox.margin>
+                  <Insets left="310.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#backtomain" prefHeight="32.0" prefWidth="144.0" style="-fx-background-color: teal; -fx-background-radius: 30;" text="Back">
+               <VBox.margin>
+                  <Insets left="310.0" />
+               </VBox.margin>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

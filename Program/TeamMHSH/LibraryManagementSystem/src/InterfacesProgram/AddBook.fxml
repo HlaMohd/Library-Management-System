@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane id="AnchorPane" prefHeight="527.0" prefWidth="773.0" style="-fx-background-color: #FFFFFF;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.AddBookController">
+   <children>
+      <FlowPane layoutY="142.0" prefHeight="392.0" prefWidth="205.0" style="-fx-background-color: teal;">
+         <children>
+            <Button fx:id="btnme" mnemonicParsing="false" onAction="#Addme" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: teal; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Me" />
+            <Button mnemonicParsing="false" onAction="#borrowBook" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: teal; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Borrow Book" />
+            <Button fx:id="btnDeleteLIb" mnemonicParsing="false" onAction="#DeleteLibrationMethod" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: #0000; -fx-text-fill: #FFFFFF; -fx-font-weight: Bold;" text="Delete libration" />
+            <Button mnemonicParsing="false" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: #FFFFFF; -fx-text-fill: teal; -fx-font-weight: bold;" text="Add Book" />
+            <Button mnemonicParsing="false" onAction="#methodReturnBook" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: #0000; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Return Book" />
+            <Button mnemonicParsing="false" onAction="#methodviewBook" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: #0000; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="View Book" />
+            <Button mnemonicParsing="false" onAction="#logoutmethod" prefHeight="46.0" prefWidth="205.0" style="-fx-background-color: #0000; -fx-text-fill: #FFFFFF; -fx-font-weight: bold;" text="Log out" />
+         </children>
+         <effect>
+            <ColorAdjust />
+         </effect>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </FlowPane>
+      <Pane prefHeight="140.0" prefWidth="773.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="57.0" layoutY="29.0" prefHeight="58.0" prefWidth="294.0" style="-fx-text-fill: #FFFFFF; -fx-font-size: 40;" text="Add Book" />
+            <Label layoutX="69.0" layoutY="87.0" style="-fx-text-fill: #FFFFFF;" text="Library Managment " />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="174.0" prefHeight="46.0" prefWidth="325.0">
+         <children>
+            <Label layoutX="23.0" layoutY="15.0" prefHeight="21.0" prefWidth="84.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="Title : " />
+            <TextField fx:id="AddBook_Title" layoutX="176.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="227.0" prefHeight="46.0" prefWidth="325.0">
+         <children>
+            <Label layoutX="23.0" layoutY="15.0" prefHeight="21.0" prefWidth="84.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="Publisher : " />
+            <TextField fx:id="AddBook_Publisher" layoutX="176.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="273.0" prefHeight="46.0" prefWidth="310.0">
+         <children>
+            <Label layoutX="23.0" layoutY="15.0" prefHeight="21.0" prefWidth="84.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="Auther :" />
+            <TextField fx:id="AddBook_Outher" layoutX="176.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="213.0" layoutY="417.0" prefHeight="46.0" prefWidth="304.0">
+         <children>
+            <Label layoutX="23.0" layoutY="13.0" prefHeight="21.0" prefWidth="145.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="number Of cobies :" />
+            <TextField fx:id="AddBook_numberOfCobies" layoutX="180.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="319.0" prefHeight="46.0" prefWidth="294.0">
+         <children>
+            <Label layoutX="23.0" layoutY="15.0" prefHeight="21.0" prefWidth="84.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="Price : " />
+            <TextField fx:id="AddBook_Price" layoutX="176.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Pane layoutX="218.0" layoutY="365.0" prefHeight="46.0" prefWidth="369.0">
+         <children>
+            <Label layoutX="23.0" layoutY="15.0" prefHeight="21.0" prefWidth="168.0" style="-fx-font-size: 15; -fx-font-weight: bold; -fx-text-fill: #000000;" text="Year Of Publication :" />
+            <TextField fx:id="AddBook_YearOfBublish" layoutX="176.0" layoutY="11.0" prefHeight="25.0" prefWidth="98.0" />
+         </children>
+      </Pane>
+      <Button fx:id="done" layoutX="543.0" layoutY="463.0" mnemonicParsing="false" onAction="#methodDone" prefHeight="38.0" prefWidth="168.0" style="-fx-background-color: teal; -fx-text-fill: #FFFFFF; -fx-font-weight: Bold; -fx-background-radius: 20;" text="done" />
+   </children>
+</AnchorPane>

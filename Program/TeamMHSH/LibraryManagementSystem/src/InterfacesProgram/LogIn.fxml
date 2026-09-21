@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="531.0" prefWidth="1022.0" style="-fx-background-color: #4B9385;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.LogInController">
+   <children>
+      <ImageView fitHeight="536.0" fitWidth="1022.0" opacity="0.26" pickOnBounds="true">
+         <image>
+            <Image url="@images/742bf67964ad2c931d903af880d096fd.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane id="AnchorPane" layoutX="448.0" layoutY="20.0" prefHeight="480.0" prefWidth="545.0" style="-fx-background-color: #F2D7D5; -fx-background-radius: 30;">
+         <children>
+            <Label layoutX="90.0" layoutY="41.0" text="Sign In" textFill="#4d4d4d">
+               <font>
+                  <Font name="Zilla Slab Medium" size="30.0" />
+               </font>
+            </Label>
+            <Separator layoutX="86.0" layoutY="79.0" prefHeight="0.0" prefWidth="380.0" style="-fx-background-color: #4B9385;" />
+            <TextField fx:id="txtUsername" layoutX="232.0" layoutY="158.0" prefHeight="31.0" prefWidth="234.0" promptText="username" />
+            <Text fill="#4d4d4d" fontSmoothingType="LCD" layoutX="74.0" layoutY="181.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Username" wrappingWidth="125.6708984375">
+               <font>
+                  <Font name="High Tower Text Italic" size="30.0" />
+               </font>
+            </Text>
+            <Text fill="#4d4d4d" fontSmoothingType="LCD" layoutX="74.0" layoutY="262.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="125.6708984375">
+               <font>
+                  <Font name="High Tower Text Italic" size="30.0" />
+               </font>
+            </Text>
+            <Button fx:id="btnsignIn" layoutX="159.0" layoutY="301.0" mnemonicParsing="false" onAction="#signIn" prefHeight="38.0" prefWidth="207.0" style="-fx-background-color: #4b9385; -fx-background-radius: 40;" text="Sign In">
+               <font>
+                  <Font name="Script MT Bold" size="30.0" />
+               </font>
+            </Button>
+            <Button fx:id="btnsignUp" layoutX="170.0" layoutY="406.0" mnemonicParsing="false" onAction="#signUp" prefHeight="50.0" prefWidth="185.0" style="-fx-background-color: #4b9385; -fx-background-radius: 40;" text="Sign Up">
+               <font>
+                  <Font name="Script MT Bold" size="25.0" />
+               </font>
+            </Button>
+            <Separator layoutX="28.0" layoutY="386.0" prefHeight="3.0" prefWidth="493.0" style="-fx-background-color: #4b9385;" />
+            <PasswordField fx:id="txtPassword" layoutX="232.0" layoutY="239.0" prefHeight="31.0" prefWidth="234.0" promptText="password" />
+         </children>
+      </AnchorPane>
+      <ImageView fitHeight="538.0" fitWidth="443.0" layoutX="-1.0" layoutY="-2.0" opacity="0.44" pickOnBounds="true">
+         <image>
+            <Image url="@images/istockphoto-899442424-612x612.jpg" />
+         </image>
+      </ImageView>
+      <Label layoutX="36.0" layoutY="86.0" prefHeight="85.0" prefWidth="406.0" text="Welcome to Little Ray Library" textFill="#edbb99">
+         <font>
+            <Font name="Pristina" size="36.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

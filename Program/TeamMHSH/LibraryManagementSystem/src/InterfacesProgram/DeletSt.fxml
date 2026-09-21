@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="303.0" prefWidth="528.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.DeletStController">
+   <children>
+      <Pane prefHeight="159.0" prefWidth="600.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="32.0" layoutY="57.0" style="-fx-text-fill: #FFFFFF; -fx-font-size: 30;" text="Delete Student" />
+            <Label layoutX="57.0" layoutY="102.0" style="-fx-text-fill: #FFFFFF;" text="Library Managment" />
+         </children>
+      </Pane>
+      <Pane layoutY="159.0" prefHeight="92.0" prefWidth="600.0">
+         <children>
+            <Label layoutX="29.0" layoutY="46.0" style="-fx-text-fill: #000000; -fx-font-size: 15; -fx-font-weight: Bold;" text="Enter id to delete : " />
+            <TextField fx:id="id" layoutX="167.0" layoutY="44.0" />
+            <Label layoutX="38.0" layoutY="27.0" prefHeight="17.0" prefWidth="116.0" style="-fx-text-fill: #800;" text="this id is not exist" visible="false" />
+            <Label layoutX="29.0" layoutY="27.0" prefHeight="17.0" prefWidth="126.0" style="-fx-text-fill: #800;" text="this id is not exist" visible="false" />
+         </children>
+      </Pane>
+      <Button layoutX="333.0" layoutY="264.0" mnemonicParsing="false" onAction="#metondDone" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: teal; -fx-text-fill: #FFFFFF; -fx-background-radius: 20;" text="Done " />
+      <Button fx:id="btnBack" layoutX="450.0" layoutY="264.0" mnemonicParsing="false" onAction="#btnBackmethod" prefHeight="25.0" prefWidth="103.0" style="-fx-background-color: teal; -fx-text-fill: #FFFFFF; -fx-background-radius: 20;" text="Back" />
+   </children>
+</AnchorPane>

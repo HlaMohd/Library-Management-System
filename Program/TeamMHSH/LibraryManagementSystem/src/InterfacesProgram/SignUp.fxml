@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="514.0" prefWidth="689.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InterfacesProgram.SignUpController">
+   <children>
+      <Pane prefHeight="128.0" prefWidth="689.0" style="-fx-background-color: teal;">
+         <children>
+            <Label layoutX="56.0" layoutY="14.0" style="-fx-text-fill: #FFFFFF; -fx-font-size: 45;" text="Sign Up" />
+            <Label layoutX="68.0" layoutY="80.0" style="-fx-text-fill: #FFFFFF;" text="Library Managment" />
+         </children>
+      </Pane>
+      <VBox layoutX="47.0" layoutY="145.0" prefHeight="288.0" prefWidth="575.0">
+         <children>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Label prefHeight="36.0" prefWidth="103.0" style="-fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: #000000;" text="First Name : " />
+                  <TextField fx:id="FirstName" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="35.0">
+               <children>
+                  <Label style="-fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: #000000;" text="Last Name : " />
+                  <TextField fx:id="LastName" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="67.0">
+               <children>
+                  <Label style="-fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: #000000;" text="Major : " />
+                  <TextField fx:id="Magor" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="28.0">
+               <children>
+                  <Label style="-fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: #000000;" text="User Name  : " />
+                  <TextField fx:id="UserName" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" spacing="40.0">
+               <children>
+                  <Label style="-fx-font-size: 15; -fx-font-weight: Bold; -fx-text-fill: #000000;" text="PassWord : " />
+                  <TextField fx:id="PassWord" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <HBox layoutX="351.0" layoutY="446.0" prefHeight="45.0" prefWidth="309.0" spacing="30.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#DoneMethod" prefHeight="43.0" prefWidth="150.0" style="-fx-background-radius: 20; -fx-background-color: teal; -fx-text-fill: #FFFFFF;" text="Done" />
+            <Button mnemonicParsing="false" onAction="#BackMethod" prefHeight="43.0" prefWidth="147.0" style="-fx-background-radius: 20; -fx-background-color: teal; -fx-text-fill: #FFFFFF;" text="Back" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
